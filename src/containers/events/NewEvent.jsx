@@ -1,5 +1,4 @@
 import "./NewEvent.css";
-import Footer from "../footer/Footer";
 import { Link } from 'react-router-dom';
 import './Particle';
 import Events from './EventDetailsData';
@@ -20,20 +19,11 @@ export default function Scene() {
     <div className="Eventcontainer">
       <div className="main">
         <div className="article">
-          <div className="panel red">
+          <div className="panel">
             <div className='Event-heading'>
               <div className='first-name'>Astro</div>
               <div className='last-name'>Chronicles</div>
             </div>
-            <div className="down-arrow-box">
-              <span />
-              <span />
-              <span />
-            </div>
-            <div className="dark-circles" id="circle-one"></div>
-            <div className="dark-circles" id="circle-two"></div>
-            <div className="dark-circles" id="circle-three"></div>
-            <div className="dark-circles" id="circle-four"></div>
             <div className="bottom-text">
               <div className="arrow">
                 <Link to="#"></Link>
@@ -49,7 +39,7 @@ export default function Scene() {
               titleSpans.push(<span key={i}>{event.title[i]}</span>);
             }
             return (
-              <div key={event.id} className={`panel ${event.color}`}>
+              <div key={event.id} className={`panel`}>
                 <img src={`/assets/images/events_images/${event.src}`} className='img1' alt={event.title} />
                 <div className="Eventtitle">
                   <div onClick={()=> handleEventClick(event.id)}>
@@ -59,9 +49,11 @@ export default function Scene() {
               </div>
             );
           })}
+          
         </div>
-        <Footer />
+        
       </div>
+      
     </div>
   );
 }
