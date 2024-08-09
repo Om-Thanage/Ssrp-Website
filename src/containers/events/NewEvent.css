@@ -25,7 +25,7 @@
   .Eventtitle{
     
     font-weight:bolder;
-    background:black;
+    background:transparent;
     color:white;
     font-size: 72px;
     padding:24px;
@@ -111,7 +111,7 @@ span:nth-child(13) {
   
   display: flex;
   flex-direction: column;
-  margin-top: 15vh;
+  margin-top: 0vh;
   padding: 0px 24px;
   transition: opacity .5s;
   overflow:hidden;
@@ -123,6 +123,7 @@ span:nth-child(13) {
   font-weight:bolder;
   line-height: 1;
   position: relative;
+  color: white;
 }
 /*
 .first-name::after, .last-name::after {
@@ -195,7 +196,7 @@ span:nth-child(13) {
   height: 10px; 
   width: 10px; 
   border-radius: 50%; 
-  background: rgb(0, 0, 0); 
+  background: rgb(117, 114, 114); 
 } 
 
 .ball-container .ball:nth-child(1) { 
