@@ -19,7 +19,6 @@
     animation: glow2 2s ease-in-out infinite alternate;
     mix-blend-mode: difference;
     padding: 0px 24px;
-    margin-top: -15vh;
 }
 
 .project-container {
