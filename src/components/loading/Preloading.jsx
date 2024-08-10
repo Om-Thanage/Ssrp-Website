@@ -1,5 +1,4 @@
 import './Loading.css';
-import './Star.css';
 
 function PreLoading() {
   return (
