@@ -7,6 +7,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+
     
    
 }
@@ -20,6 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: black;
   overflow-x: hidden;
+  cursor: url('/public/assets/rocket.png'), auto !important;
 }
 
  ::-webkit-scrollbar{

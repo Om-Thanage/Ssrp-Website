@@ -17,23 +17,29 @@
     margin-top: 15vh;
 }
 
-.video-left{
+.image-left{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
-    height: fit-content;
-    z-index: -1;
     position: relative;
-    margin-left: 48px;
-    border: 10px solid white;
-    margin-top: 25vh;
 }
 
-.video-left video{
-    width: 40vw;
-    aspect-ratio: 16/9;
-    object-fit: cover;
+.eventimage{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .eventimage img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+} */
+.eventimage img{
+    width: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
 }
 
 .close-button{

@@ -1,12 +1,10 @@
 import { useEffect } from 'react';
 import './CrowdFunding.css'
-import { useCursorContext } from '../../components/cursor/CursorContext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { motion } from 'framer-motion';
 
 function Crowdfunding() {
-    const { variants, cursorVariant, textEnter, textLeave } = useCursorContext();
+
 
     useEffect(() => {
         AOS.init({ duration: "2000" });
@@ -14,12 +12,8 @@ function Crowdfunding() {
 
   return (
     <>
-    <motion.div className="cursor"
-              variants={variants}
-              animate={cursorVariant}
-              transition={{ type: "tween", ease: "backOut", duration:0}}/>
         <div className="crowd-funding-container">
-            <h1 className="crowdfunding-heading" data-aos="zoom-in"><div onMouseEnter={textEnter} onMouseLeave={textLeave}>Introduction</div></h1>
+            <h1 className="crowdfunding-heading" data-aos="zoom-in">Introduction</h1>
             <div className="crowd-funding-video" data-aos="flip-down">
                 <video loop controls id="myVideo">
                     <source src="/assets/crowdfundingvideo.mp4" type="video/mp4" />
@@ -73,7 +67,7 @@ function Crowdfunding() {
         </div>
     </div> */}
     <div className="crowdfunding-googleform">
-        <div className="crowdfunding-heading"onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="zoom-in">Google Form</div>
+        <div className="crowdfunding-heading" data-aos="zoom-in">Google Form</div>
         <div className="google-form" >
             <iframe data-aos="fade-up" src="https://docs.google.com/forms/d/e/1FAIpQLScLvn9j4LvX4-fnkcxXp89dGAKhJaUJBWF2-0eCat2UGxScTQ/viewform" height={"100%"} width={"100%"} title="SSRP Google Form" />
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Projects from './ProjectsDetails';
 import './NewProject.css';
 import { useNavigate } from 'react-router-dom';
@@ -9,6 +9,14 @@ function NewProject() {
     const handleprojectClick = (id) => {
         navigate(`/project/${id}`);
     }
+    useEffect(() => {
+      setTimeout(() => {
+        const vh = window.innerHeight * 0.15; // Calculating 15vh in pixels
+        window.scrollTo(0, window.innerHeight - vh);
+      }, 1000);
+    }
+    , []);
+
   return (
     <>
       <div className="project-heading">

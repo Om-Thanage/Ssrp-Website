@@ -2,7 +2,6 @@ import './App.css';
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AOS from 'aos';
-import { CursorProvider } from './components/cursor/CursorContext';
 import StarBackground from './components/background/Background';
 import NotFound from './components/Not found page/NotFound';
 import HomePage from './pages/home/HomePage';
@@ -20,7 +19,6 @@ function App() {
   }, []);
 
   return (
-    <CursorProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={
@@ -135,7 +133,6 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </CursorProvider>
   );
 }
 

@@ -1,10 +1,9 @@
 import  { useEffect, useState } from "react";
 import "./NavBar.css";
-import { useCursorContext } from "../../components/cursor/CursorContext";
+
 
 const NavBar = () => {
   const [sticky, setSticky] = useState(false);
-  const { textEnter, textLeave } = useCursorContext();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -41,42 +40,42 @@ const NavBar = () => {
           isOpen && (
             <div className="nav-links mobile" data-aos="fade-left">
               <ul>
-                <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li className="nav-item target" >
                   <div className="navigation">
                     <a className="nav-link1 active" aria-current="page" href="/">
                       Home
                     </a>
                   </div>
                 </li>
-                <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li className="nav-item target" >
                   <div className="navigation">
                     <a className="nav-link1 active" aria-current="page" href="/project">
                       Projects
                     </a>
                   </div>
                 </li>
-                <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li className="nav-item target" >
                   <div className="navigation">
                     <a className="nav-link1 active" aria-current="page" href="/community">
                       Community
                     </a>
                   </div>
                 </li>
-                <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li className="nav-item target" >
                   <div className="navigation">
                     <a className="nav-link1 active" aria-current="page" href="/events">
                       Events
                     </a>
                   </div>
                 </li>
-                <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li className="nav-item target" >
                   <div className="navigation">
                     <a className="nav-link1 active" aria-current="page" href="/crowdfunding">
                       Crowd-Funding
                     </a>
                   </div>
                 </li>
-                <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                <li className="nav-item target" >
                   <div className="navigation">
                     <a className="nav-link1 active" aria-current="page" href="/contact">
                       Contact US
@@ -88,32 +87,32 @@ const NavBar = () => {
           )
         }
         <ul className={`nav-links ${isOpen ? "open" : ""}`} data-aos="fade-down">
-          <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <li className="nav-item target" >
             <div className="navigation">
               <a className="nav-link1 active" aria-current="page" href="/">Home</a>
             </div>
           </li>
-          <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <li className="nav-item target" >
             <div className="navigation">
               <a className="nav-link1 active" aria-current="page" href="/project">Projects</a>
             </div>
           </li>
-          <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <li className="nav-item target" >
             <div className="navigation">
               <a className="nav-link1 active" aria-current="page" href="/community">Community</a>
             </div>
           </li>
-          <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <li className="nav-item target" >
             <div className="navigation">
               <a className="nav-link1 active" aria-current="page" href="/events">Events</a>
             </div>
           </li>
-          <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <li className="nav-item target" >
             <div className="navigation">
               <a className="nav-link1 active" aria-current="page" href="/crowdfunding">Crowd-Funding</a>
             </div>
           </li>
-          <li className="nav-item target" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <li className="nav-item target" >
             <div className="navigation">
               <a className="nav-link1 active" aria-current="page" href="/contact">Contact US</a>
             </div>
