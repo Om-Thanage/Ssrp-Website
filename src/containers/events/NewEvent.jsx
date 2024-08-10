@@ -43,7 +43,7 @@ export default function Scene() {
               titleSpans.push(<span key={i}>{event.title[i]}</span>);
             }
             return (
-              <div key={event.id} className={`panel`}>
+              <div key={event.id} className="panel" style={{backgroundImage:`/assets/images/events_images/${event.bg}`}}>
                 <img src={`/assets/images/events_images/${event.src}`} className='img1' alt={event.title} />
                 <div className="Eventtitle">
                   <div onClick={()=> handleEventClick(event.id)}>

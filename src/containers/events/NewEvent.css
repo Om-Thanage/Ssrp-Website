@@ -363,12 +363,9 @@ animation: snowball-animation 10s linear 15s infinite;
 
 .img1{
 background-color: black;
-height:200px;
-width:200px;
+width: 100vw;
+aspect-ratio: 16/9;
 position: absolute;
-top:85px;
-border: 10px solid white;
-z-index: 0;
 }
 
 .Eventcontainer {
