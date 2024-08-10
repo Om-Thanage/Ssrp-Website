@@ -1,530 +1,538 @@
+.panel1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin-top:15vh;
+  justify-content: start;
+  align-items: start;
+}
 .panel {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .red {
-    background: red;
-    justify-content: start;
-    align-items: start;
-  }
-  .orange {
-    background: orange;
-    z-index: 2;
-    
-  }
-  .purple {
-    background: purple;
-  }
-  .blue {
-    background-color: blue;
-  }
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red {
+  background: red;
+  justify-content: start;
+  align-items: start;
+}
+.orange {
+  background: orange;
+  z-index: 2;
   
-  .Eventtitle{
-    
-    font-weight:bolder;
-    background:transparent;
-    color:white;
-    font-size: 72px;
-    padding:24px;
-    z-index: 1;
-    
-  }
+}
+.purple {
+  background: purple;
+}
+.blue {
+  background-color: blue;
+}
 
-  .Eventtitle div{
-    border-radius: 10px solid white;
-  }
+.Eventtitle{
+  
+  font-weight:bolder;
+  background:transparent;
+  color:white;
+  font-size: 72px;
+  padding:24px;
+  z-index: 1;
+  
+}
 
-  .Eventtitle div span{
-    font-family: 'Nulshock bd';
-  }
+.Eventtitle div{
+  border-radius: 10px solid white;
+}
 
-  @keyframes dance{
-    0%{transform:translateY(0)}
-    25%{transform:translateY(5%)}
-    50%{transform:translateY(0)}
-    75%{transform:translateY(-5%)}
-    100%{transform:translateY(0)}
-  }
+.Eventtitle div span{
+  font-family: 'Nulshock bd';
+}
+
+@keyframes dance{
+  0%{transform:translateY(0)}
+  25%{transform:translateY(5%)}
+  50%{transform:translateY(0)}
+  75%{transform:translateY(-5%)}
+  100%{transform:translateY(0)}
+}
 .Eventtitle >div:hover{
-  animation: dance 0.1s linear;
+animation: dance 0.1s linear;
 }
 .Eventtitle:hover{
-  span:nth-child(1) {
-    color: red;
+span:nth-child(1) {
+  color: red;
 }
 
 span:nth-child(2) {
-    color: blue;
+  color: blue;
 }
 
 span:nth-child(3) {
-    color: green;
+  color: green;
 }
 
 span:nth-child(4) {
-    color: orange;
+  color: orange;
 }
 
 span:nth-child(5) {
-    color: purple;
+  color: purple;
 }
 
 span:nth-child(6) {
-    color: pink;
+  color: pink;
 }
 
 span:nth-child(7) {
-    color: brown;
+  color: brown;
 }
 
 span:nth-child(8) {
-    color: teal;
+  color: teal;
 }
 span:nth-child(9) {
-  color: magenta;
+color: magenta;
 }
 
 span:nth-child(10) {
-  color: cyan;
+color: cyan;
 }
 
 span:nth-child(11) {
-  color: lime;
+color: lime;
 }
 
 span:nth-child(12) {
-  color: navy;
+color: navy;
 }
 
 span:nth-child(13) {
-  color: gold;
+color: gold;
 }
 
 }
- 
+
 
 
 .Event-heading{
-  
-  display: flex;
-  flex-direction: column;
-  margin-top: 0vh;
-  padding: 0px 24px;
-  transition: opacity .5s;
-  overflow:hidden;
-  
+
+display: flex;
+flex-direction: column;
+margin-top: 0vh;
+padding: 0px 24px;
+transition: opacity .5s;
+overflow:hidden;
+
 }
 
 .last-name, .first-name{
-  font-size: 72px;
-  font-weight:bolder;
-  line-height: 1;
-  position: relative;
-  color: white;
+font-size: 72px;
+font-weight:bolder;
+line-height: 1;
+position: relative;
+color: white;
 }
 /*
 .first-name::after, .last-name::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 5px;
-  background-color: white;
-  position:absolute;
-  left: -100px;
-  bottom: 0px;
-  transition: width 0.3s;
+content: '';
+display: block;
+width: 0;
+height: 5px;
+background-color: white;
+position:absolute;
+left: -100px;
+bottom: 0px;
+transition: width 0.3s;
 }
 
 .first-name:hover::after {
-  margin-inline-start: 5vw;
-  width: calc(100% + 5vw);
+margin-inline-start: 5vw;
+width: calc(100% + 5vw);
 }
 .last-name:hover::after{
-  width: 100%;
+width: 100%;
 }
 
 */
 .bottom-text {
-  margin: 50px;
-  font-size: 1.5vw;
-  position: absolute;
-  bottom:0vh;
-  left:0;
-  display: flex;
-  width: 100vw;
-  justify-content: space-between;
+margin: 50px;
+font-size: 1.5vw;
+position: absolute;
+bottom:0vh;
+left:0;
+display: flex;
+width: 100vw;
+justify-content: space-between;
 }
 
 .bottom-text div{
-  font-size: 48px;
+font-size: 48px;
 }
 
 .bottom-text a {
-  color: white;
-  text-decoration: none;
+color: white;
+text-decoration: none;
 }
 
 .arrow a {
-  position: absolute;
-  bottom: 0vw;
-  right: 10vw;
-  width: 30px;
-  height: 30px;
-  border: 2px solid white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: white;
+position: absolute;
+bottom: 0vw;
+right: 10vw;
+width: 30px;
+height: 30px;
+border: 2px solid white;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: white;
 }
 
 .arrow a::before {
-  
-  content: '→';
-  font-size: 1rem;
+
+content: '→';
+font-size: 1rem;
 }
 
 
 
 
 .ball-container .ball { 
-  position: absolute; 
-  height: 10px; 
-  width: 10px; 
-  border-radius: 50%; 
-  background: rgb(117, 114, 114); 
+position: absolute; 
+height: 10px; 
+width: 10px; 
+border-radius: 50%; 
+background: rgb(117, 114, 114); 
 } 
 
 .ball-container .ball:nth-child(1) { 
-  top: -50%; 
-  left: 5%; 
-  width: 20px; 
-  height: 20px; 
-  animation: snowball-animation 10s linear 1s infinite; 
+top: -50%; 
+left: 5%; 
+width: 20px; 
+height: 20px; 
+animation: snowball-animation 10s linear 1s infinite; 
 } 
 
 .ball-container .ball:nth-child(2) { 
-  top: -20%; 
-  left: 10%;
-  width: 30px; 
-  height: 30px; 
-  animation: snowball-animation 10s linear 2s infinite; 
+top: -20%; 
+left: 10%;
+width: 30px; 
+height: 30px; 
+animation: snowball-animation 10s linear 2s infinite; 
 } 
 
 .ball-container .ball:nth-child(3) { 
-  top: -50%; 
-  left: 15%;
-  width: 15px; 
-  height: 15px;  
-  animation: snowball-animation 10s linear 3s infinite; 
+top: -50%; 
+left: 15%;
+width: 15px; 
+height: 15px;  
+animation: snowball-animation 10s linear 3s infinite; 
 } 
 
 .ball-container .ball:nth-child(4) { 
-  top: -10%; 
-  left: 20%;
-  width: 20px; 
-  height: 20px; 
-  animation: snowball-animation 10s linear 4s infinite;  
+top: -10%; 
+left: 20%;
+width: 20px; 
+height: 20px; 
+animation: snowball-animation 10s linear 4s infinite;  
 } 
 
 .ball-container .ball:nth-child(5) { 
-  top: -20%; 
-  left: 25%; 
-  width: 30px; 
-  height: 30px; 
-  animation: snowball-animation 10s linear 5s infinite; 
+top: -20%; 
+left: 25%; 
+width: 30px; 
+height: 30px; 
+animation: snowball-animation 10s linear 5s infinite; 
 } 
 
 .ball-container .ball:nth-child(6) { 
-  top: -40%; 
-  left: 30%;
-  width: 10px; 
-  height: 10px; 
-  animation: snowball-animation 10s linear 6s infinite; 
+top: -40%; 
+left: 30%;
+width: 10px; 
+height: 10px; 
+animation: snowball-animation 10s linear 6s infinite; 
 } 
 
 .ball-container .ball:nth-child(7) { 
-  top: -30%; 
-  left: 35%; 
-  width: 15px; 
-  height: 15px; 
-  animation: snowball-animation 10s linear 7s infinite; 
+top: -30%; 
+left: 35%; 
+width: 15px; 
+height: 15px; 
+animation: snowball-animation 10s linear 7s infinite; 
 } 
 
 .ball-container .ball:nth-child(8) { 
-  top: -20%; 
-  left: 40%;
-  width: 20px; 
-  height: 20px; 
-  animation: snowball-animation 10s linear 8s infinite;  
+top: -20%; 
+left: 40%;
+width: 20px; 
+height: 20px; 
+animation: snowball-animation 10s linear 8s infinite;  
 } 
 
 .ball-container .ball:nth-child(9) { 
-  top: -50%; 
-  left: 45%; 
-  width: 25px; 
-  height: 25px; 
-  animation: snowball-animation 10s linear 9s infinite; 
+top: -50%; 
+left: 45%; 
+width: 25px; 
+height: 25px; 
+animation: snowball-animation 10s linear 9s infinite; 
 } 
 
 .ball-container .ball:nth-child(10) { 
-  top: -5%; 
-  left: 50%;
-  width: 10px; 
-  height: 10px; 
-  animation: snowball-animation 10s linear 10s infinite;  
+top: -5%; 
+left: 50%;
+width: 10px; 
+height: 10px; 
+animation: snowball-animation 10s linear 10s infinite;  
 } 
 
 .ball-container .ball:nth-child(11) { 
-  top: -20%; 
-  left: 60%;
-  width: 20px; 
-  height: 20px;
-  animation: snowball-animation 10s linear 11s infinite; 
+top: -20%; 
+left: 60%;
+width: 20px; 
+height: 20px;
+animation: snowball-animation 10s linear 11s infinite; 
 } 
 
 .ball-container .ball:nth-child(12) { 
-  top: -10%; 
-  left: 70%;
-  width: 30px; 
-  height: 30px; 
-  animation: snowball-animation 10s linear 12s infinite;  
+top: -10%; 
+left: 70%;
+width: 30px; 
+height: 30px; 
+animation: snowball-animation 10s linear 12s infinite;  
 } 
 
 .ball-container .ball:nth-child(13) { 
-  top: -50%; 
-  left: 80%; 
-  width: 20px; 
-  height: 20px; 
-  animation: snowball-animation 10s linear 13s infinite; 
+top: -50%; 
+left: 80%; 
+width: 20px; 
+height: 20px; 
+animation: snowball-animation 10s linear 13s infinite; 
 } 
 
 .ball-container .ball:nth-child(14) { 
-  top: -20%; 
-  left: 90%;
-  width: 10px; 
-  height: 10px; 
-  animation: snowball-animation 10s linear 14s infinite;  
+top: -20%; 
+left: 90%;
+width: 10px; 
+height: 10px; 
+animation: snowball-animation 10s linear 14s infinite;  
 } 
 
 .ball-container .ball:nth-child(15) { 
-  top: -50%; 
-  left: 95%; 
-  width: 30px; 
-  height: 30px; 
-  animation: snowball-animation 10s linear 15s infinite; 
+top: -50%; 
+left: 95%; 
+width: 30px; 
+height: 30px; 
+animation: snowball-animation 10s linear 15s infinite; 
 } 
 
 /* Define animations of ball */
 
 @keyframes snowball-animation { 
-  0% { 
-      transform: translate(0); 
-      opacity: 1; 
-  } 
+0% { 
+    transform: translate(0); 
+    opacity: 1; 
+} 
 
-  20% { 
-      transform: translate(4px, 100px); 
-      opacity: 1; 
-  } 
+20% { 
+    transform: translate(4px, 100px); 
+    opacity: 1; 
+} 
 
-  40% { 
-      transform: translate(-7px, 200px); 
-      opacity: 1; 
-  } 
+40% { 
+    transform: translate(-7px, 200px); 
+    opacity: 1; 
+} 
 
-  60% { 
-      transform: translate(10px, 400px); 
-      opacity: 1; 
-  } 
+60% { 
+    transform: translate(10px, 400px); 
+    opacity: 1; 
+} 
 
-  80% { 
-      transform: translate(-14px, 700px); 
-      opacity: 1; 
-  } 
+80% { 
+    transform: translate(-14px, 700px); 
+    opacity: 1; 
+} 
 
-  100% { 
-      transform: translate(16px, 900px); 
-      opacity: 1; 
-  } 
+100% { 
+    transform: translate(16px, 900px); 
+    opacity: 1; 
+} 
 } 
 
 .img1{
-  background-color: black;
-  height:200px;
-  width:200px;
-  position: absolute;
-  top:85px;
-  border: 10px solid white;
-  z-index: 0;
+background-color: black;
+height:200px;
+width:200px;
+position: absolute;
+top:85px;
+border: 10px solid white;
+z-index: 0;
 }
 
 .Eventcontainer {
-  margin: 0;
-  scroll-behavior: smooth;
+margin: 0;
+scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+display: none;
 }
 
 .main {
-  position: fixed;
-  top: 0;
-  left: 0;
+position: fixed;
+top: 0;
+left: 0;
 /*  note vh and vw switched  */
-  width: 100vh; 
-  height: 100vw;
+width: 100vh; 
+height: 100vw;
 /*    */
-  transform-origin: top left;
-  transform: rotate(-90deg) translateX(-100vh);
-  overflow-x: hidden;
-  overflow-y: scroll;
+transform-origin: top left;
+transform: rotate(-90deg) translateX(-100vh);
+overflow-x: hidden;
+overflow-y: scroll;
 /*   scroll-snap-type: y mandatory; */
 }
 
 .article {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  height: fit-content;
-  transform-origin: top left;
-  transform: rotate(90deg) translateY(-100vh);
+display: flex;
+flex-direction: row;
+width: fit-content;
+height: fit-content;
+transform-origin: top left;
+transform: rotate(90deg) translateY(-100vh);
 }
 
 .down-arrow-box{
-  position: relative;
-  top: 50%;
+position: relative;
+top: 50%;
 
 }
 
 .down-arrow-box span{
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-bottom: 2px solid white;
-  border-right: 2px solid white;
-  transform: rotate(45deg);
-  margin: -10px;
-  animation: animate 2s infinite;
+display: block;
+width: 20px;
+height: 20px;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+transform: rotate(45deg);
+margin: -10px;
+animation: animate 2s infinite;
 }
 
 .down-arrow-box span:nth-child(2)
 {
-  animation-delay: -0.2s;
+animation-delay: -0.2s;
 }
 
 .down-arrow-box span:nth-child(3)
 {
-  animation-delay: -0.4s;
+animation-delay: -0.4s;
 }
 
 @keyframes animate{
-  
-  0%{
-    opacity: 0;
-    transform: rotate(45deg) translate(-20px, -20px);
-  }
-  50%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    transform: rotate(45deg) translate(20px, 20px);
-  }
+
+0%{
+  opacity: 0;
+  transform: rotate(45deg) translate(-20px, -20px);
+}
+50%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+  transform: rotate(45deg) translate(20px, 20px);
+}
 }
 
 .dark-circles{
-  aspect-ratio: 1/1;
-  background-color: black;
-  position: absolute;
-  z-index: 0;
-  border-radius: 50%;
+aspect-ratio: 1/1;
+background-color: black;
+position: absolute;
+z-index: 0;
+border-radius: 50%;
 }
 
 #circle-one{
-  top: -10%;
-  left: 14%;
-  height: 600px;
+top: -10%;
+left: 14%;
+height: 600px;
 }
 
 #circle-two{
-  top: 10%;
-  left: 30%;
-  height: 300px;
-  z-index: 0;
+top: 10%;
+left: 30%;
+height: 300px;
+z-index: 0;
 }
 
 #circle-three{
-  bottom: -5%;
-  left: 26%;
-  height: 150px;
+bottom: -5%;
+left: 26%;
+height: 150px;
 }
 
 #circle-four{
-  bottom: 10%;
-  left: 20%;
-  height: 100px;
+bottom: 10%;
+left: 20%;
+height: 100px;
 }
 @media screen and (max-width: 768px) {
-  .article {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    height: fit-content;
-    transform-origin: top left;
-    transform: none;
-  }
+.article {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  transform-origin: top left;
+  transform: none;
+}
 
-  .main{
-    width: 100vw;
-    height: 100vh;
-    transform: none;
-  }
+.main{
+  width: 100vw;
+  height: 100vh;
+  transform: none;
+}
 
-  .Eventtitle{
-    font-size: 24px;
-  }
-  .img1{
-    position: relative;
-    top: 0;
-  }
-  .panel{
-    display: flex;
-    flex-direction: column;
-  }
-  .bottom-text div{
-    font-size: 24px;
-  }
+.Eventtitle{
+  font-size: 24px;
+}
+.img1{
+  position: relative;
+  top: 0;
+}
+.panel{
+  display: flex;
+  flex-direction: column;
+}
+.bottom-text div{
+  font-size: 24px;
+}
 
-  
+
 }
 
 @media screen and (max-width:480px){
-  .bottom-text{
-    margin: 50px 0px ;
-  }
-  .bottom-text div{
-    font-size: 16px;
-    text-align: center;
-    width: 100vw;
-    font-family: 'Nulshock bd';
-  }
-  .arrow{
-    display: none;
-  }
-  .red{
-    justify-content: center;
-    align-items: center;
-  }
-  .name{
-    margin-top: 0;
-  }
-  .last-name, .first-name{
-    font-size: 48px;
-  }
+.bottom-text{
+  margin: 50px 0px ;
+}
+.bottom-text div{
+  font-size: 16px;
+  text-align: center;
+  width: 100vw;
+  font-family: 'Nulshock bd';
+}
+.arrow{
+  display: none;
+}
+.red{
+  justify-content: center;
+  align-items: center;
+}
+.name{
+  margin-top: 0;
+}
+.last-name, .first-name{
+  font-size: 48px;
+}
 }
