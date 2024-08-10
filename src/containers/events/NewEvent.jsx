@@ -19,7 +19,7 @@ export default function Scene() {
     <div className="Eventcontainer">
       <div className="main">
         <div className="article">
-          <div className="panel">
+          <div className="panel1">
             <div className='Event-heading'>
               <div className='first-name'>Astro</div>
               <div className='last-name'>Chronicles</div>
