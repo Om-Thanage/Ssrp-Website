@@ -182,7 +182,11 @@
     }
     #myVideo{
         height: auto;
-        width: 90vw;
+        width: 100%;
         padding-left: 0vw;
+    }
+    .crowd-funding-content{
+        width: 100%;
+        margin: 0px;
     }
 }

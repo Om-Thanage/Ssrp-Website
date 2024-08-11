@@ -14,12 +14,12 @@ function Crowdfunding() {
     <>
         <div className="crowd-funding-container">
             <h1 className="crowdfunding-heading" data-aos="zoom-in">Introduction</h1>
-            <div className="crowd-funding-video" data-aos="flip-down">
+            <div className="crowd-funding-video" data-aos="zoom-in">
                 <video loop controls id="myVideo">
                     <source src="/assets/crowdfundingvideo.mp4" type="video/mp4" />
                 </video>
             </div>
-            <div className="crowd-funding-content" data-aos="flip-down">
+            <div className="crowd-funding-content" data-aos="zoom-in">
                 <p>Support the future of space exploration with the Somaiya Space Research Project!Our dedicated team of students at KJSCE is pushing the boundaries of space science and technology. With your contribution to our crowdfunding campaign, we aim to develop innovative solutions, conduct groundbreaking experiments, and participate in prestigious space competitions. Your support will provide us with the necessary resources for advanced equipment, materials, and opportunities to collaborate with industry experts. Join us in our quest to explore the cosmos and inspire the next generation of space scientists and engineers. Donate today and help us reach for the stars!</p>
             </div>
         </div>
