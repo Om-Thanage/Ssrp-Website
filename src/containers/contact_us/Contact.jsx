@@ -57,7 +57,7 @@ export default function Contact() {
   return (
     <div className='contact-container' id='contact'>
               <div className="contact-end-title">
-          <h2 className='gradient-text' data-aos="fade-down" >Ignite the stellar exchange 🔥</h2>
+          <h2 className='gradient-text' data-aos="fade-down" >Ignite the stellar exchange</h2>
           <hr />
         </div>
     <div className="contact-grid">
