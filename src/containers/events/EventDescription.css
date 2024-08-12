@@ -90,9 +90,6 @@
     }
 }
 
-.event-description video{
-    display: none;
-}
 
 
 
@@ -109,9 +106,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .video-left{
-        display: none;
     }
 
     .close-button{
