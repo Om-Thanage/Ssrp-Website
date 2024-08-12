@@ -19,6 +19,7 @@
 .about-text{
   color: rgb(226, 224, 224);
   /* scale: 1.03; */
+  text-align:justify ;
 }
 
    .about-text:hover{
