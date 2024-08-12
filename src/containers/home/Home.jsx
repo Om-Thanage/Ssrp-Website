@@ -41,7 +41,7 @@ function Home() {
           <div className="text1" data-aos="flip-right">
             <p className='item' >Our Cosmic Identity</p>
             <img className='about-img' data-aos="zoom-in" src='/assets/images/about_images/logo.png' alt='ssrp logo' width='250' height='250'/>
-              <p className='about-text' >The Somaiya Space Research Project (SSRP), a new student-led initiative launched on January 16, 2024, at KJ Somaiya College of Engineering, focuses on developing and launching the KJSCE StudentSAT and advancing space exploration. Our initiatives combine research with participation in competitions like Spaceport America, International Rover Challenge, CANSAT, aiming to make a significant impact.</p>
+              <p className='about-text' >The Somaiya Space Research Project (SSRP), a new student-led initiative launched on January 16, 2024 at KJ Somaiya College of Engineering, focuses on developing and launching the KJSCE StudentSAT and advancing space exploration. Our initiatives combine research with participation in competitions like Spaceport America, International Rover Challenge, CANSAT, aiming to make a significant impact.</p>
 
 
           </div>

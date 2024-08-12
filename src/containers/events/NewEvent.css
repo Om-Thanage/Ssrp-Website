@@ -123,6 +123,7 @@ margin-top: 0vh;
 padding: 0px 24px;
 transition: opacity .5s;
 overflow:hidden;
+text-decoration: white solid underline;
 
 }
 
