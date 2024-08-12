@@ -1,34 +1,49 @@
 .project-heading {
     width: 100vw;
     height: 100vh;
-    background-image: url(https://i.pinimg.com/originals/70/56/c5/7056c57d97a035af946d8f17cddf16a6.jpg);
+    background-image: url(../../../public/assets/images/project_images/Bg.jpg);
     aspect-ratio: 16/9;
     background-repeat: no-repeat;
     background-size: cover; /* Ensure the image covers the entire area */
     background-position: center; /* Center the image */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    padding-top: 5vw;
+    padding-right: 5vw;
     font-size: 72px;
-    color: white;
-    text-align: center;
+    color: rgb(7, 0, 0);
+    text-align: right;
     font-weight: bolder;
-    border-bottom: 2px solid #d278f3a2;
-    -webkit-animation: glow2 2s ease-in-out infinite alternate;
-    -moz-animation: glow2 2s ease-in-out infinite alternate;
-    animation: glow2 2s ease-in-out infinite alternate;
+    border-bottom: 2px solid #040005a2;
+    -webkit-animation: glow3 2s ease-in-out infinite alternate;
+    -moz-animation: glow3 2s ease-in-out infinite alternate;
+    animation: glow3 2s ease-in-out infinite alternate;
     mix-blend-mode: difference;
-    padding: 0px 24px;
 }
+@keyframes glow3 {
+    from {
+      text-shadow: 0 0 2px #d4e9f560, 0 0 2px #d4e9f560, 0 0 2px #d4e9f560;
+    }
+    to {
+      text-shadow: 0 0 2px #d4e9f560, 0 0 2px #d4e9f560, 0 0 3px #d4e9f560;
+  }
+  }
+
+  .orbital-endeavers{
+    margin-left: 600vw;
+    font-family: 'Nulshock Bd';
+  }
 
 .project-container {
+    margin: 4vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
-    gap: 20px; /* Adjust the gap between grid items as needed */
+    gap: 0px; /* Adjust the gap between grid items as needed */
 }
 
 .project-card {
+    margin-top: 2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +58,7 @@
 
 .project-title, .project-author {
     margin-top: 10px;
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-weight: bold;
     font-family: 'Nulshock Bd';
     color: white;
@@ -62,7 +77,7 @@
 .project-button:hover {
     background-color: white;
     color: black;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     font-weight: bold;
 }
 
@@ -74,23 +89,33 @@
 
 
 @media screen and (max-width: 768px) {
+    .project-heading {
+        font-size: 48px;
+    }
+    .orbital-endeavers {
+        margin-top: 10vw;
+    }
+
     .project-container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
     }
     .project-author, .project-title {
-        font-size: 4vw;
+        font-size: 3.8vw;
     }
     
 }
 
 @media  screen and (max-width: 480px) {
     .project-heading {
-        font-size: 48px;
+        font-size: 40px;
+    }
+    .orbital-endeavers {
+        margin-top: 10vw;
     }
     
     .project-title, .project-author {
-        font-size: 24px;
+        font-size: 14.7px;
     }
     
     .project-button {
