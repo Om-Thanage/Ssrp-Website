@@ -1,15 +1,15 @@
 import "./NewEvent.css";
 import { Link } from 'react-router-dom';
-import './Particle';
+//import './Particle';
 import Events from './EventDetailsData';
 import { useNavigate } from 'react-router-dom';
 
 export default function Scene() {
 
-  const balls = [];
-  for (let i = 0; i < 15; i++) {
-    balls.push(<div key={i} className="ball"></div>);
-  }
+  // const balls = [];
+  // for (let i = 0; i < 15; i++) {
+  //   balls.push(<div key={i} className="ball"></div>);
+  // }
     const navigate = useNavigate();
     const handleEventClick = (id) => {
         navigate(`/event/${id}`);
@@ -34,7 +34,7 @@ export default function Scene() {
               </div>
             </div>
             <div className="ball-container">
-              {balls}
+              {/* {balls} */}
             </div>
           </div>
           {Events.map((event) => {
@@ -44,7 +44,7 @@ export default function Scene() {
             }
             return (
               <div key={event.id} className="panel" style={{backgroundImage:`/assets/images/events_images/${event.bg}`}}>
-                <img src={`/assets/images/events_images/${event.src}`} className='img1' alt={event.title} />
+                {/* <img src={`/assets/images/events_images/${event.src}`} className='img1' alt={event.title} /> */}
                 <div className="Eventtitle">
                   <div onClick={()=> handleEventClick(event.id)}>
                     {titleSpans}
