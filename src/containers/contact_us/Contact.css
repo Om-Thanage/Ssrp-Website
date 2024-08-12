@@ -5,16 +5,15 @@
 }
 @keyframes glow {
     from {
-      text-shadow: 0 0 3px #f4cc05af, 0 0 3px #f4cc05af, 0 0 3px #f4cc05af;
+      text-shadow: 0 0 5px #f4cc05af, 0 0 5px #f4cc05af, 0 0 5px #f4cc05af;
     }
     to {
-      text-shadow: 0 0 3px #f4cc05af, 0 0 3px #f4cc05af, 0 0 4px #f4cc05af;
+      text-shadow: 0 0 5px #f4cc05af, 0 0 5px #f4cc05af, 0 0 6px #f4cc05af;
   }
   }
 
 .contact-container{
-    margin: 0px;
-    margin-bottom: 9vh;
+    margin-bottom: 12vh;
     padding-top: 0px;
     /* padding-left: 70px; */
     /* padding: 42px; */
@@ -26,10 +25,12 @@
 }
 
 .contact-end{
+    width: 35vw;
+    margin-right:-60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .contact-end-title h2{
@@ -48,8 +49,8 @@
     border: none;
     outline: none;
     padding-left: 25px;
-    font-weight: 500;
-    color: white;
+    font-weight: bold;
+    color: rgb(6, 6, 6);
     background-color: black;  
 }
 
@@ -59,17 +60,19 @@
 }
     
 .contact-inputs{
-    border: 2px solid whitesmoke;
+    background-color: rgba(245, 245, 245, 0.961);
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
 } 
 .contact-inputs::placeholder{
-    color : #a9a9a9;
-    
+    color : rgba(0, 0, 0, 0.678);
+    font-weight:bold;
 }
     
 .contact-end button{
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 3px 5px;
     font-size: 14px;
     color: #fff;
     gap: 10px;
@@ -81,10 +84,6 @@
 .contact-end button img{
     height : 15px;
 }
-
-
-
-
 
 @media(max-width: 768px){
 
@@ -113,17 +112,15 @@
 
 .submit-button {
 	display: inline-block;
-
-	padding: 10px 0;
+	padding: 5px 0;
 	text-align: center;
 	cursor: pointer;
 	overflow: hidden;
 	text-transform: uppercase;
 	font-weight: 900;
-
+    border-radius: 5px;
 	position: relative;
-
-	margin: 10px 5px 0 5px;
+	margin: 5px 5px 0 5px;
 }
 
 
@@ -133,7 +130,6 @@
 	display: block;
 	width: 250px;
 	height: 250px;
-    font-weight: 900;
 	position: absolute;
 	top: 40%;
 	left: -100px;
@@ -142,15 +138,16 @@
 	transform: scale(0);
     transition: color 0.5s ease;
 
-	-webkit-transition: 0.4s ease-in-out transform;
-	-o-transition: 0.4s ease-in-out transform;
-	-ms-transition: 0.4s ease-in-out transform;
-	-moz-transition: 0.4s ease-in-out transform;
-	transition: 0.4s ease-in-out transform;
+	-webkit-transition: 0.2s ease-in-out transform;
+	-o-transition: 0.2s ease-in-out transform;
+	-ms-transition: 0.2s ease-in-out transform;
+	-moz-transition: 0.2s ease-in-out transform;
+	transition: 0.2s ease-in-out transform;
 }
 
 .submit-button:hover {
     font-weight: 900;
+    color: black;
 }
 
 .submit-button:hover::before {
@@ -179,21 +176,24 @@ input[type='number']::-webkit-inner-spin-button {
   }
 
 .contact-grid{
+    margin-right: -7vw;
     display: grid;
     grid-template-columns: 1.5fr 1fr 2fr;
 }
 
 .contact-start{
-    padding-right: 20px;
+    margin-top: -20px;
+    margin-left: 40px;
+    
     display: flex;
     flex-direction: column;
     /* align-items: space-between; */
-    justify-content: start;
+    /* justify-content: start; */
 }
 
 .icon{
-    color: white;
-    font-size: 20px;
+    color: rgb(254, 251, 251);
+    font-size: 25px;
     margin: 5px;
     width: fit-content;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
@@ -214,13 +214,17 @@ input[type='number']::-webkit-inner-spin-button {
   }
 
 .icon img{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgba(245, 245, 245, 0.868);
+    color: rgb(0, 0, 0);
     margin: 24px;
 }
  
 .detail{
     font-size: 17px;
-    margin-left: 72px;
-    margin-top: -24px;
+    margin-left: 92px;
+    margin-top: -32px;
     color: white;
 
 }
@@ -234,12 +238,12 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .contact-middle{
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     aspect-ratio: 1/1;
-
 }
 
 @media screen and (max-width: 1024px){
@@ -247,6 +251,7 @@ input[type='number']::-webkit-inner-spin-button {
 .contact-container{
     padding-top: 20px;
     padding-left: 0px;
+    margin-left: 0;
 }
     .contact-start-content{
             text-align: center;
@@ -270,6 +275,8 @@ input[type='number']::-webkit-inner-spin-button {
         margin-left: -2vh; 
     } 
     .contact-grid{
+        margin-top: 20px;
+        margin-right: 30px;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -286,13 +293,14 @@ input[type='number']::-webkit-inner-spin-button {
     }
 
     .contact-end{
-        width: 60%;
+        margin-right: 3px;
+        width: 50%;
         margin-top: 2vh;
     }
 
     .contact-middle{
         height: 40vh;
-        width: 60%;
+        width: 50%;
     }
     
 }

@@ -37,6 +37,7 @@ function Loading() {
 
   return (
     <div className='Loading' style={{ marginTop: "-15vh"}}>
+      <img fetchPriority='high' src='/assets/loading.png' alt='loading' className='loading-img' />
       {/* <Star /> */}
       <div className="container-title">
         <div className="text-title" id='loadingone'>SSRP</div>

@@ -1,5 +1,4 @@
- 
-  .container-about {
+ .container-about {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 1rem;
@@ -9,6 +8,8 @@
   }
   
   .item {
+    height: 20%;
+    width: auto;
     font-size: 2.2rem;
     color: white;
     padding: 1rem;
@@ -62,6 +63,7 @@
   }
 
   .about-text{
+    word-spacing: 0px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 20px;
@@ -76,8 +78,8 @@
     margin: 12px 270px;
   }
   .about-img{
-    /* width: 55%;
-    height: auto; */
+    width: 55%;
+    height: auto;
     margin-top: 0px;
     margin-bottom: 20px;
   }
@@ -89,6 +91,11 @@
     justify-content: center;
     align-items: center;
     /* background: linear-gradient(rgba(6,3,10,1), rgb(20, 10, 37), rgba(2,4,14,1)); */
+  }
+  @media screen and (min-width: 1024px) {
+    .about-text{
+      font-size: 18px;
+    }
   }
 
   @media screen and (max-width: 1024px) {

@@ -48,7 +48,7 @@ function Home() {
 
           <div className='text2' data-aos="zoom-in">
             <p className='item' >Galactic Vision</p>
-            <img className='about-img' data-aos="zoom-in" src='/assets/images/about_images/futuregoalsnew.png' alt='ssrp future goals images' width='280' height='260' />
+            <img className='about-img' data-aos="zoom-in" src='/assets/images/about_images/futuregoalsnew.png' alt='ssrp future goals images' width='250' height='250' />
             <p className='about-text' >We combine research with renowned competitions like IRC, CANSAT, and IROC-U to expand knowledge and validate student contributions. Competitions enhance problem-solving skills, while in-depth research propels space exploration and drives cutting-edge technologies. By tackling present challenges, we lay the groundwork for future innovations with lasting impact.</p>
           </div>
 
