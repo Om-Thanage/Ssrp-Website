@@ -1,5 +1,5 @@
 <h1 align='center' border='none'>SSRP WEBSITE<h1>
-<a href="https://ssrp-website-beta.vercel.app/"><img src="https://ibb.co/1qkQKr9" alt="Ssrp Front Page" width="100%" border="0"></a>
+<a href="https://ssrp-website-beta.vercel.app/"><img src="https://i.ibb.co/vPSqm3J/Screenshot-2024-08-12-091844.png" alt="Ssrp Front Page" width="100%" border="0"></a>
 
 <h3 align='center'>This website is created using</h3><br/>
 <p align="center">
