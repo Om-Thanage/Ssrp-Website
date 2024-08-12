@@ -12,7 +12,7 @@ function HomePage() {
     
       setTimeout(() => {
         setLoading(false);
-      }, 50000);
+      }, 5000);
       
     }, []);
     if(loading){
